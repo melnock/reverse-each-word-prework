@@ -3,4 +3,7 @@ def reverse_each_word(str)
   arr.each {|word| print word.reverse!, " "}
   arr.join(" ")
   
+  arr = str.split(" ")
+  arr.map {|word| print word.reverse!}
+  arr.join(" ")
 end  
